@@ -1,64 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Tela de Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      background-color: #eeeeee;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-    .login {
-      width: 300px;
-      margin: 100px auto;
-      padding: 25px;
-      background-color: white;
-      border-radius: 10px;
-    }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2f7;
+}
 
-    h1 {
-      text-align: center;
-      color: #1769aa;
-    }
+.login {
+  width: 650px;
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px #0002;
+}
 
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-    }
+.esquerda {
+  width: 45%;
+  padding: 35px;
+  color: white;
+  background: linear-gradient(135deg, #12366b, #168bd0);
+}
 
-    button {
-      width: 100%;
-      padding: 10px;
-      color: white;
-      background-color: #1769aa;
-      border: none;
-      border-radius: 5px;
-    }
+.esquerda h1 {
+  margin-top: 100px;
+  font-size: 30px;
+}
 
-    a {
-      display: block;
-      margin-top: 15px;
-      text-align: center;
-      color: #1769aa;
-    }
-  </style>
+.esquerda p {
+  line-height: 1.5;
+  color: #e5f2ff;
+}
+
+.direita {
+  width: 55%;
+  padding: 35px;
+}
+
+.direita h2 {
+  margin: 0 0 8px;
+  color: #172b4d;
+}
+
+.subtitulo {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+.opcoes {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 12px;
+}
+
+a {
+  color: #1680c5;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+  background: #1680c5;
+  cursor: pointer;
+}
+
+.cadastro {
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .login {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .esquerda,
+  .direita {
+    width: 100%;
+  }
+
+  .esquerda h1 {
+    margin-top: 30px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="login">
-    <h1>Entrar</h1>
-
-    <input type="email" placeholder="E-mail">
-    <input type="password" placeholder="Senha">
-
-    <button>Entrar</button>
-
-    <a href="#">Esqueci minha senha</a>
+<div class="login">
+  <div class="esquerda">
+    <h1>Bem-vindo!</h1>
+    <p>Acesse sua conta de forma simples, rápida e segura.</p>
   </div>
+
+  <div class="direita">
+    <h2>Entrar</h2>
+    <p class="subtitulo">Preencha seus dados</p>
+
+    <form>
+      <label>E-mail</label>
+      <input type="email" placeholder="Digite seu e-mail">
+
+      <label>Senha</label>
+      <input type="password" placeholder="Digite sua senha">
+
+      <div class="opcoes">
+        <span><input type="checkbox"> Lembrar</span>
+        <a href="#">Esqueci a senha</a>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <p class="cadastro">
+      Não possui conta? <a href="#">Criar conta</a>
+    </p>
+  </div>
+</div>
 
 </body>
 </html>
