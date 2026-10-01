@@ -1,55 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <title>Tela de Login</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            background: #ddd;
-            text-align: center;
-        }
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #eeeeee;
+    }
 
-        .caixa {
-            background: white;
-            width: 300px;
-            margin: 100px auto;
-            padding: 20px;
-            border-radius: 10px;
-        }
+    .login {
+      width: 300px;
+      margin: 100px auto;
+      padding: 25px;
+      background-color: white;
+      border-radius: 10px;
+    }
 
-        input {
-            width: 90%;
-            padding: 10px;
-            margin: 5px;
-        }
+    h1 {
+      text-align: center;
+      color: #1769aa;
+    }
 
-        button {
-            padding: 10px 30px;
-            background: blue;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-    </style>
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      color: white;
+      background-color: #1769aa;
+      border: none;
+      border-radius: 5px;
+    }
+
+    a {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      color: #1769aa;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="caixa">
+  <div class="login">
+    <h1>Entrar</h1>
 
-    <h2>LOGIN</h2>
-
-    <input type="text" placeholder="Usuário" required>
-
-    <input type="password" placeholder="Senha" required>
-
-    <br><br>
+    <input type="email" placeholder="E-mail">
+    <input type="password" placeholder="Senha">
 
     <button>Entrar</button>
 
-</div>
+    <a href="#">Esqueci minha senha</a>
+  </div>
 
 </body>
 </html>
-```
