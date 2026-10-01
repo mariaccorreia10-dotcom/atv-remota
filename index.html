@@ -1,58 +1,56 @@
 ```html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Login</title>
+    <title>Login</title>
 
-<style>
-body{
-    font-family:Arial;
-    background:#f2f2f2;
-    text-align:center;
-    padding-top:100px;
-}
+    <style>
+        body {
+            font-family: Arial;
+            background: #ddd;
+            text-align: center;
+        }
 
-.login{
-    background:white;
-    width:300px;
-    margin:auto;
-    padding:25px;
-    border-radius:10px;
-}
+        .caixa {
+            background: white;
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
 
-input{
-    width:90%;
-    padding:10px;
-    margin:8px;
-}
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 5px;
+        }
 
-button{
-    width:97%;
-    padding:10px;
-    background:#333;
-    color:white;
-    border:0;
-    cursor:pointer;
-}
-</style>
+        button {
+            padding: 10px 30px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="login">
+<div class="caixa">
 
-<h2>Login</h2>
+    <h2>LOGIN</h2>
 
-<form>
-<input type="text" placeholder="Usuário" required>
+    <input type="text" placeholder="Usuário" required>
 
-<input type="password" placeholder="Senha" required>
+    <input type="password" placeholder="Senha" required>
 
-<button type="submit">Entrar</button>
-</form>
+    <br><br>
+
+    <button>Entrar</button>
 
 </div>
 
 </body>
 </html>
+```
